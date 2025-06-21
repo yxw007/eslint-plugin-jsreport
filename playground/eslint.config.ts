@@ -1,4 +1,4 @@
-import jsreportRule from '../src/rules/no-invalid-jsreport-child';
+import jsreportRule from '../src/rules/no-invalid-child-path';
 import parser from '@html-eslint/parser';
 
 export default [
@@ -12,7 +12,7 @@ export default [
 		plugins: {
 			'jsreport-eslint': {
 				rules: {
-					'no-invalid-jsreport-child': jsreportRule,
+					'no-invalid-child-path': jsreportRule,
 				},
 			},
 		},
