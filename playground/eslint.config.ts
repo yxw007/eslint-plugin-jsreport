@@ -1,5 +1,9 @@
-import jsreportRule from '../src/rules/no-invalid-child-path';
 import parser from '@html-eslint/parser';
+import jsReportPlugin from "../src";
+import rule from '../src/rules/no-invalid-child-path';
+
+console.log(JSON.stringify(jsReportPlugin, null, 2));
+
 
 export default [
 	{
@@ -12,12 +16,12 @@ export default [
 		plugins: {
 			'jsreport-eslint': {
 				rules: {
-					'no-invalid-child-path': jsreportRule,
-				},
+					'no-invalid-child-path': rule,
+				}
 			},
 		},
 		rules: {
-			'jsreport-eslint/no-invalid-jsreport-child': 'error',
+			'jsreport-eslint/no-invalid-child-path': 'error',
 		},
 	},
 ];
