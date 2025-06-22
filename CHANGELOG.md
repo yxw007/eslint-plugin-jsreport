@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.2
+
+[compare changes](https://github.com/yxw007/eslint-plugin-jsreport/compare/v1.0.1...v1.0.2)
+
+### 🤖 CI
+
+- Add GitHub Actions workflow for automated release process ([57abbec](https://github.com/yxw007/eslint-plugin-jsreport/commit/57abbec))
+
+### ❤️ Contributors
+
+- Potter <75838259@qq.com>
+
 ## v1.0.1
 
 
