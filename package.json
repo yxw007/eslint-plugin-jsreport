@@ -52,5 +52,9 @@
     "**/*.{ts}": [
       "npm run lint:fix"
     ]
-  }
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ]
 }
