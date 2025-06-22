@@ -1,18 +1,27 @@
 {
-  "name": "jsreport-eslint",
+  "name": "eslint-plugin-jsreport",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsx ./test/index.ts",
+    "build": "npm run clear && rolldown --config ./rolldown.config.ts",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "clear": "rimraf dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@html-eslint/eslint-plugin": "^0.41.0",
     "@html-eslint/parser": "^0.41.0",
+    "@typescript-eslint/eslint-plugin": "^8.34.1",
+    "@typescript-eslint/parser": "^8.34.1",
     "eslint": "^9.29.0",
+    "jiti": "^2.4.2",
+    "rimraf": "^6.0.1",
+    "rolldown": "^1.0.0-beta.18",
+    "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
 }

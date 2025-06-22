@@ -1,5 +1,5 @@
 import parser from '@html-eslint/parser';
-import jsreport from "../src/index";
+import jsreport from "eslint-plugin-jsreport";
 
 export default [
 	{
