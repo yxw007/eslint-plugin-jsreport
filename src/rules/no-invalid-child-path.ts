@@ -1,6 +1,11 @@
 import { Rule } from 'eslint';
 
 const CHILD_SYNTAX = /\{#child\s+(.+)\s*\}/g;
+interface HtmlTextNode {
+	type: string;
+	value: string;
+	range: [number, number];
+}
 
 const rule: Rule.RuleModule = {
 	meta: {
@@ -19,7 +24,7 @@ const rule: Rule.RuleModule = {
 	},
 	create(context) {
 		return {
-			Text(node: any) {
+			Text(node: HtmlTextNode) {
 				const value: string = node.value;
 				let match: RegExpExecArray | null;
 				while ((match = CHILD_SYNTAX.exec(value)) !== null) {
