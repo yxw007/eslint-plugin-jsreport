@@ -1,5 +1,5 @@
 import { RuleTester } from "eslint";
-import noInvalidChildPathRule from "../src/rules/no-invalid-child-path";
+import plugin from "../../dist";
 import parser from '@html-eslint/parser';
 
 const ruleTester = new RuleTester({
@@ -10,9 +10,11 @@ const ruleTester = new RuleTester({
 	},
 });
 
+let name = "no-invalid-child-path";
+
 ruleTester.run(
-	"no-invalid-child-path",
-	noInvalidChildPathRule,
+	name,
+	plugin.rules[name],
 	{
 		valid: [
 			{

@@ -2,8 +2,9 @@
   "name": "eslint-plugin-jsreport",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "tsx ./test/index.ts",
+    "test": "tsx ./tests/index.ts",
     "build": "npm run clear && rolldown --config ./rolldown.config.ts",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
@@ -38,6 +39,7 @@
     "lint-staged": "^16.1.2",
     "rimraf": "^6.0.1",
     "rolldown": "^1.0.0-beta.18",
+    "rolldown-plugin-dts": "^0.13.11",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   },

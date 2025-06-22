@@ -64,6 +64,8 @@ You can quickly try out what this plugin does in the [playground/test.html](./pl
 Just edit or create an HTML file in the playground directory, write `{#child xxx}` syntax, and `npm run lint`
 The plugin will automatically detect and report any invalid child path usage, `npm run lint:fix` syntax errors will be automatically fixed.
 
+![alt text](assets/image.png)
+
 ## 🤝 Contributing
 
 Contributions are welcome!  

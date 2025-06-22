@@ -1,4 +1,5 @@
 import { defineConfig } from 'rolldown';
+import { dts } from 'rolldown-plugin-dts'
 
 export default defineConfig([
 	{
@@ -13,5 +14,14 @@ export default defineConfig([
 				file: "dist/index.cjs",
 			}
 		],
+	},
+	{
+		input: 'src/index.ts',
+		plugins: [dts()],
+		output:
+		{
+			dir: 'dist',
+			format: 'es',
+		},
 	}
 ]);
