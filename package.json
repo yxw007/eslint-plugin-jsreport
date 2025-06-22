@@ -9,7 +9,7 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "clear": "rimraf dist",
-    "release": "npm changelogen --release -i",
+    "release": "npx changelogen --release -i",
     "prepare": "husky"
   },
   "keywords": [
