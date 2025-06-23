@@ -37,6 +37,11 @@ ruleTester.run(
 				output: '<div>{#child sub_page_path}</div>',
 				errors: 1,
 			},
+			{
+				code: "<div>{#child AA{{:language}} }</div>",
+				output: '<div>{#child AA{{:language}}}</div>',
+				errors: 1,
+			},
 		],
 	},
 );

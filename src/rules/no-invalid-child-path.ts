@@ -28,9 +28,9 @@ const rule: Rule.RuleModule = {
 				const value: string = node.value;
 				let match: RegExpExecArray | null;
 				while ((match = CHILD_SYNTAX.exec(value)) !== null) {
-					const full = match[0];
+					const full = (match[0] ?? "").trim();
 					const param = (match[1] ?? "").trim();
-					if (!/\{#child [^\s]+\}/.test(full)) {
+					if (!/\{#child [^\s]+\}$/.test(full)) {
 						const start = node.range[0] + match.index;
 						context.report({
 							node,
