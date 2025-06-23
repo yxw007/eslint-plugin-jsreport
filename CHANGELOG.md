@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.3
+
+[compare changes](https://github.com/yxw007/eslint-plugin-jsreport/compare/v1.0.2...v1.0.3)
+
+### 🩹 Fixes
+
+- '{#child AA{{:language}} }' issues that weren't fixed properly ([2f67b07](https://github.com/yxw007/eslint-plugin-jsreport/commit/2f67b07))
+
+### ❤️ Contributors
+
+- FreeCoderX <75838259@qq.com>
+
 ## v1.0.2
 
 [compare changes](https://github.com/yxw007/eslint-plugin-jsreport/compare/v1.0.1...v1.0.2)
